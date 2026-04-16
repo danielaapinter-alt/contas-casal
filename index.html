@@ -1555,9 +1555,7 @@ document.getElementById('bName').addEventListener('keydown', e => { if (e.key ==
 document.getElementById('bAmount').addEventListener('keydown', e => { if (e.key === 'Enter') addBill(); });
 
 renderContas();
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
-}
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </body>
